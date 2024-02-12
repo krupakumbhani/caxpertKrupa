@@ -14,6 +14,10 @@ body {
     font-family: 'Suwannaphum';
 }
 
+.bg_white {
+    background-color: #FFF !important;
+}
+
 .sticky_header {
     padding: 15px 0;
 }
@@ -251,4 +255,48 @@ p {
 .swiper-slide img {
     width: 100px;
     height: 200px;
+}
+
+.services_work_detail img {
+    width: 70px;
+    height: 70px;
+}
+
+.services_work_detail h5 {
+    color: #36408E;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.services_work_detail h6 ,.tax_detail h6 {
+    color: #36408E;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.services_work_detail p ,.tax_detail p{
+    color: #36408E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.acc_services {
+    background-color: #EEEDE8;
+    width: 100%;
+    display: block;
+}
+
+.tax_section span {
+    color: #000000;
+    font-size: 14px;
+}
+
+.tax_section .small-heading {
+    color: #000;
+    line-height: 40px;
+}
+
+.tax_detail img{
+    width: 40px;
+    height: 40px;
 }
