@@ -223,3 +223,29 @@ p {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+
+
+
+
+
+
+
+/* Slider */
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+.swiper-slide {
+    overflow: hidden !important;
+}
+
+.swiper-wrapper {
+    height: 200px;
+}
+
+.swiper-slide img {
+    width: 100px;
+    height: 200px;
+}
