@@ -1,0 +1,137 @@
+@media screen and (max-width:1440px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .hero-section p {
+        margin-bottom: 7px;
+    }
+
+    .small-heading {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .books_section .acc_man {
+        bottom: -74%;
+    }
+
+    .books_section .rupee {
+        top: -130px;
+    }
+
+    .sticky_header .nav-item .nav-link,
+    .sticky_header .dropdown-toggle,
+    .sticky_header .navbar-brand {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .books_section .acc_man {
+        bottom: -50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+    }
+
+    .books_section .rupee {
+        top: -20%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .mobile_logo {
+        display: block;
+    }
+
+    .dextop_logo {
+        display: none;
+    }
+
+    .sticky_header .navbar-nav {
+        align-items: start !important;
+    }
+
+    .sticky_header .navbar-nav .nav-item {
+        border-bottom: 1px solid var(--blue);
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .sticky_header .navbar-nav .nav-item a{
+        padding: 6px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    .hero-section p {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: normal;
+    }
+    .ca_button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+    .small-heading {
+        font-size: 24px;
+    }
+    .small-heading {
+        font-size: 24px;
+    }
+    .books_section span, .data_section span, .time_focus span, .tax_section span {
+        font-size: 11px;
+    }
+    .ca_footer {
+        padding: 20px 0px 10px;
+    }
+    .ca_footer .copyright {
+        font-size: 12px;
+    }
+    .ca_footer ul li {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .small-heading {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .books_section span,
+    .data_section span,
+    .time_focus span,
+    .tax_section span {
+        font-size: 10px;
+    }
+}
