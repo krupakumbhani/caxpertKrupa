@@ -21,14 +21,14 @@
     <!-- start nav  -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top sticky_header">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <a class="navbar-brand me-0 mobile_logo" href="javascript:void(0);">
                 <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
@@ -59,9 +59,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);">CAX Logo</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0);">FAQs</a>
                     </li>
                     <li class="nav-item">
@@ -72,6 +69,7 @@
                     </li>
                 </ul>
             </div>
+           
         </div>
         </div>
     </nav>
@@ -325,7 +323,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
                     <h5 class="mb-3">SERVICES</h5>
                     <ul>
                         <li>
@@ -360,9 +358,10 @@
                 </div>
             </div>
             <hr />
-            <div class="d-flex justify-content-between align-items-center copyright mt-4">
-                <div class="d-flex gap-3">
-                    <span>© Espresso Technologies Private Limited </span>
+            <div class="d-flex justify-content-between align-items-start align-items-md-center copyright mt-4 flex-column flex-md-row">
+                <span class="d-block d-md-none">© Espresso Technologies Private Limited </span>
+                <div class="d-flex gap-3 py-3 py-md-0">
+                    <span class="d-none d-md-inline-block">© Espresso Technologies Private Limited </span>
                     <span>
                         <Link href="">Terms of Service</Link>
                     </span>

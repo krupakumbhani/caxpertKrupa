@@ -24,13 +24,15 @@ body {
 
 .sticky_header .nav-item .nav-link,
 .sticky_header .dropdown-toggle,
+.sticky_header .dropdown-toggle:hover,
 .sticky_header .navbar-brand {
     padding: 6px 20px;
     font-weight: 500;
-    color: var(--black);
+    color: var(--black) !important;
     font-size: 14.5px;
     letter-spacing: 0.4px;
 }
+
 
 .sticky_header .navbar-brand img {
     height: 52px;
@@ -140,6 +142,11 @@ p {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ca_footer ul li:hover {
+    color: #4054B2;
 }
 
 .ca_footer .copyright {
@@ -268,13 +275,15 @@ p {
     font-weight: 700;
 }
 
-.services_work_detail h6 ,.tax_detail h6 {
+.services_work_detail h6,
+.tax_detail h6 {
     color: #36408E;
     font-size: 16px;
     font-weight: 700;
 }
 
-.services_work_detail p ,.tax_detail p{
+.services_work_detail p,
+.tax_detail p {
     color: #36408E;
     font-size: 16px;
     font-weight: 400;
@@ -296,7 +305,11 @@ p {
     line-height: 40px;
 }
 
-.tax_detail img{
+.tax_detail img {
     width: 40px;
     height: 40px;
+}
+
+.ca_footer hr {
+    opacity: 1;
 }
