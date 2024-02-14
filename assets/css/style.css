@@ -14,6 +14,13 @@ body {
     font-family: 'Suwannaphum';
 }
 
+.ca_container {
+    max-width: 1172px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
 .bg_white {
     background-color: #FFF !important;
 }
@@ -33,6 +40,21 @@ body {
     letter-spacing: 0.4px;
 }
 
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.6196078431372549);
+    border-radius: 25px 25px 25px 25px;
+    padding-block: 0;
+    overflow: hidden;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #FFF;
+}
+.dropdown-menu .dropdown-item:hover {
+    color: #000;
+}
 
 .sticky_header .navbar-brand img {
     height: 52px;
@@ -45,7 +67,7 @@ body {
 .hero-section {
     background-color: var(--hero);
     display: block;
-    padding: 160px 0;
+    padding: 160px 0 50px;
 }
 
 .hero-section h1 {
@@ -61,7 +83,7 @@ body {
 }
 
 .ca_button {
-    padding: 11px 30px;
+    padding: 15px 30px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -76,8 +98,9 @@ body {
 
 .small-heading {
     color: var(--blue);
-    font-size: 2.1rem;
+    font-size: 30px;
     font-weight: 700;
+    line-height: 38px;
 }
 
 p {
@@ -160,6 +183,13 @@ p {
     display: block;
 }
 
+.books_section .small-heading {
+    font-size: 33.6px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 25px;
+}
+
 .books_section .acc_man {
     position: absolute;
     right: -20%;
@@ -190,7 +220,7 @@ p {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5em;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 .data_section {
@@ -240,11 +270,6 @@ p {
 
 
 
-
-
-
-
-
 /* Slider */
 .swiper-button-next,
 .swiper-button-prev {
@@ -253,6 +278,23 @@ p {
 
 .swiper-slide {
     overflow: hidden !important;
+}
+
+.swiper-wrapper {
+    height: 72px !important;
+}
+
+.swiper-slide div {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.swiper-slide div img {
+    width: 94px;
+    height: 37px;
+    margin: 0 auto;
 }
 
 .swiper-wrapper {
@@ -312,4 +354,16 @@ p {
 
 .ca_footer hr {
     opacity: 1;
+}
+
+.font_500 {
+    font-weight: 500 !important;
+}
+
+.font_40 {
+    font-size: 40px;
+}
+
+.font_snasrif {
+    font-family: 'sans-serif';
 }
