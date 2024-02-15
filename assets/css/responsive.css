@@ -94,13 +94,29 @@
     .sticky_header .navbar-nav .nav-item {
         border-bottom: 1px solid #000;
     }
+
+    .navbar {
+        background-color: #fff;
+        position: relative;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 94px;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        background-color: #fff;
+        padding: 0 30px;
+    }
 }
 
 @media screen and (max-width:768px) {
     .hero-section {
         padding: 80px 0;
     }
-    .ca_container{
+
+    .ca_container {
         max-width: 720px;
     }
 
@@ -149,10 +165,11 @@
 }
 
 @media screen and (max-width:600px) {
-    .ca_container{
+    .ca_container {
         max-width: 100%;
-        padding:0 12px;
+        padding: 0 12px;
     }
+
     .hero-section {
         padding: 40px 0;
     }

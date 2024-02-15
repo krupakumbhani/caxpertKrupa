@@ -39,7 +39,8 @@ body {
     font-size: 14.5px;
     letter-spacing: 0.4px;
 }
-.active_nav{
+
+.active_nav {
     background-color: transparent !important;
     position: relative !important;
 }
@@ -56,6 +57,7 @@ body {
     padding: 15px 20px;
     border-bottom: 1px solid #FFF;
 }
+
 .dropdown-menu .dropdown-item:hover {
     color: #000;
 }
@@ -355,10 +357,11 @@ p {
     font-size: 14px;
 }
 
+/* 
 .tax_section .small-heading {
     color: #000;
     line-height: 40px;
-}
+} */
 
 .tax_detail img {
     width: 40px;
@@ -379,4 +382,8 @@ p {
 
 .font_snasrif {
     font-family: 'sans-serif';
+}
+
+.color_black {
+    color: #000 !important;
 }
