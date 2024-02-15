@@ -18,7 +18,6 @@ body {
     max-width: 1172px;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
 }
 
 .bg_white {
@@ -198,9 +197,8 @@ p {
 
 .books_section .acc_man {
     position: absolute;
-    right: -20%;
-    bottom: -94%;
-    transform: translate(-50%, -50%);
+    right: 0%;
+    bottom: -75%;
     width: 42%;
     z-index: 1;
 }
@@ -357,11 +355,6 @@ p {
     font-size: 14px;
 }
 
-/* 
-.tax_section .small-heading {
-    color: #000;
-    line-height: 40px;
-} */
 
 .tax_detail img {
     width: 40px;
@@ -386,4 +379,25 @@ p {
 
 .color_black {
     color: #000 !important;
+}
+
+.bg_imaage_shape2 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.bg_imaage_shape2 svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 147px;
+    transform: translateX(-50%) rotateY(180deg);
 }
