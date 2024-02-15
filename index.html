@@ -19,7 +19,7 @@
 
     <body>
         <!-- start nav  -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top sticky_header">
+        <nav class="navbar navbar-expand-lg  sticky-top sticky_header">
             <div class="container-fluid">
                 <a class="navbar-brand me-0 mobile_logo" href="javascript:void(0);">
                     <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
@@ -46,7 +46,7 @@
                                     <a class="dropdown-item" href="javascript:void(0);">Indian Accounting</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0);">US Accounting</a>
+                                    <a class="dropdown-item border-0" href="javascript:void(0);">US Accounting</a>
                                 </li>
                             </ul>
                         </li>
@@ -442,6 +442,7 @@
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".mySwiper", {
@@ -457,6 +458,34 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+                breakpoints: {
+                    320:{
+                        slidesPerView: 1,
+                    },
+                    375: {
+                        slidesPerView: 2,
+                    },
+                    425: {
+                        slidesPerView: 2.8,
+                    },
+                    768: {
+                        slidesPerView: 4.8,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                    },
+                    1440: {
+                        slidesPerView: 8,
+                    }
+                },
+            })
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1) {
+                    $('nav').addClass("active_nav");
+                }
+                else {
+                    $('nav').removeClass("active_nav");
+                }
             });
         </script>
 

@@ -17,17 +17,17 @@
     </head>
 
     <body>
-        <!-- start nav  -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top sticky_header">
+         <!-- start nav  -->
+         <nav class="navbar navbar-expand-lg  sticky-top sticky_header">
             <div class="container-fluid">
+                <a class="navbar-brand me-0 mobile_logo" href="javascript:void(0);">
+                    <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand me-0 mobile_logo" href="javascript:void(0);">
-                    <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
-                </a>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
@@ -36,8 +36,8 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="dropdown1" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" >
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Our Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown1">
@@ -45,7 +45,7 @@
                                     <a class="dropdown-item" href="javascript:void(0);">Indian Accounting</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0);">US Accounting</a>
+                                    <a class="dropdown-item border-0" href="javascript:void(0);">US Accounting</a>
                                 </li>
                             </ul>
                         </li>
@@ -68,6 +68,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
             </div>
         </nav>
@@ -507,7 +508,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
                         <h5 class="mb-3">SERVICES</h5>
                         <ul>
                             <li>
@@ -539,10 +540,12 @@
                         </ul>
                     </div>
                 </div>
-                <hr class="mb-4"/>
-                <div class="d-flex justify-content-between align-items-center copyright mb-5">
-                    <div class="d-flex gap-3">
-                        <span>© Espresso Technologies Private Limited </span>
+                <hr />
+                <div
+                    class="d-flex justify-content-between align-items-start align-items-md-center copyright mt-4 flex-column flex-md-row">
+                    <span class="d-block d-md-none">© Espresso Technologies Private Limited </span>
+                    <div class="d-flex gap-3 py-3 py-md-0">
+                        <span class="d-none d-md-inline-block">© Espresso Technologies Private Limited </span>
                         <span>
                             <Link href="">Terms of Service</Link>
                         </span>
@@ -581,7 +584,7 @@
         <script>
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 8,
-                spaceBetween: 5,
+                spaceBetween: 30,
                 loop: true,
                 pagination: false,
                 autoplay: {
@@ -592,6 +595,34 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+                breakpoints: {
+                    320:{
+                        slidesPerView: 1,
+                    },
+                    375: {
+                        slidesPerView: 2,
+                    },
+                    425: {
+                        slidesPerView: 2.8,
+                    },
+                    768: {
+                        slidesPerView: 4.8,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                    },
+                    1440: {
+                        slidesPerView: 8,
+                    }
+                },
+            })
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1) {
+                    $('nav').addClass("active_nav");
+                }
+                else {
+                    $('nav').removeClass("active_nav");
+                }
             });
         </script>
     </body>

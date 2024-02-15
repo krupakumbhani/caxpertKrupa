@@ -39,6 +39,10 @@ body {
     font-size: 14.5px;
     letter-spacing: 0.4px;
 }
+.active_nav{
+    background-color: transparent !important;
+    position: relative !important;
+}
 
 .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.6196078431372549);
@@ -238,9 +242,18 @@ p {
     width: 100% !important;
 }
 
+
+/* toggle */
+
+
 /* slider  */
+
+
+
+
+
 .sticky_header {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
 }
 
 .bg_imaage_shape {
