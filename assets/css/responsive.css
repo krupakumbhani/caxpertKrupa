@@ -162,6 +162,14 @@
         font-size: 13px;
         margin-bottom: 5px;
     }
+
+    .books_section .acc_man {
+        display: none;
+    }
+
+    .books_section .rupee {
+        top: 0;
+    }
 }
 
 @media screen and (max-width:600px) {
