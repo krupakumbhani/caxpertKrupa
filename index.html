@@ -18,31 +18,21 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg  sticky-top sticky_header">
         <div class="container-fluid">
             <a class="navbar-brand me-0 mobile_logo" href="javascript:void(0);">
                 <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="main-div">
-                <div class="sub-div">
-                    <input type="radio" name="aa"  id="menu">
-                    <input type="radio"  name="aa" id="menu1">
-                    <label for="menu" class="label-1"></label>
-                    <label for="menu1" class="label-2"></label>	
-            
-                <div class="all-line">
-                    <div class="div-1 icon"></div>
-                    <div class="div-2 icon"></div>
-                    <div class="div-3 icon"></div>		
+            </button> -->
+            <div class="openbtn navbar-toggler"  data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>      
                 </div>
-                </div>
-            </div>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
@@ -495,6 +485,15 @@
                 $('nav').removeClass("active_nav");
             }
         });
+
+        $(".openbtn").click(function () {
+        $(this).toggleClass("active");
+        });
+
+        $(window).resize(function () {
+        PositionCheck();
+        });
+
     </script>
 
 </body>

@@ -39,11 +39,11 @@
 }
 
 @media screen and (max-width:1024px) {
-    .books_section .acc_man {
+    /* .books_section .acc_man {
         bottom: -50%;
         position: relative;
         transform: translate(-50%, -50%);
-    }
+    } */
 
     .books_section .rupee {
         top: -20%;
@@ -163,12 +163,23 @@
         margin-bottom: 5px;
     }
 
-    .books_section .acc_man {
-        display: none;
-    }
 
     .books_section .rupee {
         top: 0;
+    }
+
+    .bg_imaage_shape {
+        height: 50px !important;
+    }
+
+    .bg_imaage_shape svg,
+    .bg_imaage_shape2 svg {
+        height: 50px !important;
+    }
+
+    .books_section .acc_man {
+        bottom: -65%;
+        width: 62%;
     }
 }
 
@@ -220,5 +231,22 @@
     .services_work_detail img {
         width: 50px;
         height: 50px;
+    }
+
+    .books_section .small-heading {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .books_section .acc_man {
+        display: none;
+    }
+
+    .bg_imaage_shape2 {
+        height: 67px !important;
+    }
+
+    .books_section .rupee {
+        display: none;
     }
 }
