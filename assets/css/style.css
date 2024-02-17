@@ -165,21 +165,24 @@ p {
     color: #1F2A83;
 }
 
-.ca_footer ul li {
+.ca_footer ul li a {
     color: #000;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.ca_footer ul li:hover {
+.ca_footer ul li:hover a{
     color: #4054B2;
 }
 
-.ca_footer .copyright {
+.ca_footer .copyright a,
+.ca_footer .copyright{
     color: #B7B4B4;
     font-size: 13px;
+    text-decoration: none;
 }
 
 .books_section {
@@ -209,11 +212,11 @@ p {
     background-repeat: no-repeat;
     background-size: 10% auto;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 300px;
     position: absolute;
-    left: 0;
-    top: -60px;
+    left: 10px;
+    top: 50px;
 }
 
 .books_section span,
@@ -244,7 +247,12 @@ p {
 
 
 /* toggle */
-
+.copyright a{
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
 
 /* slider  */
 
@@ -403,10 +411,11 @@ p {
 }
 
 .openbtn {
+    padding: 2px 0px;
     width: 40px;
     height: 40px;
     position: relative;
-    background: #231f20;
+    background: #FFF;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -414,20 +423,20 @@ p {
 .openbtn span {
     display: inline-block;
     position: absolute;
-    width: 50%;
+    width: 60%;
     left: 10px;
-    height: 3px;
+    height: 4px;
     border-radius: 2px;
-    background: #fff;
+    background: #000;
     transition: all 0.4s;
 }
 
 .openbtn span:nth-of-type(1) {
-    top: 13px;
+    top: 12px;
 }
 
 .openbtn span:nth-of-type(2) {
-    top: 18px;
+    top: 17.5px;
 }
 
 .openbtn span:nth-of-type(3) {
@@ -438,7 +447,7 @@ p {
     top: 12px;
     left: 14px;
     transform: translateY(6px) rotate(-45deg);
-    width: 40%;
+    width: 60%;
 }
 
 .openbtn.active span:nth-of-type(2) {
@@ -446,10 +455,10 @@ p {
 }
 
 .openbtn.active span:nth-of-type(3) {
-    top: 26px;
+    top: 24px;
     left: 14px;
     transform: translateY(-6px) rotate(45deg);
-    width: 40%;
+    width: 60%;
 }
 
 .dropdown:hover .dropdown-menu {

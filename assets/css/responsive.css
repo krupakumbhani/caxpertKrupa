@@ -37,7 +37,12 @@
         font-size: 14px;
     }
 }
-
+@media screen and (max-width:1200px) {
+    .ca_container {
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+}
 @media screen and (max-width:1024px) {
     /* .books_section .acc_man {
         bottom: -50%;
@@ -107,7 +112,7 @@
         margin: 0 auto;
         left: 0;
         background-color: #fff;
-        padding: 0 30px;
+        padding: 0 15px;
     }
 }
 
@@ -165,11 +170,11 @@
 
 
     .books_section .rupee {
-        top: 0;
+        top: 31px;
     }
 
     .bg_imaage_shape {
-        height: 50px !important;
+        height: 49px !important;
     }
 
     .bg_imaage_shape svg,
@@ -191,6 +196,7 @@
     .ca_container {
         max-width: 100%;
         padding: 0 12px;
+        margin: 0 auto;
     }
 
     .hero-section {
@@ -251,5 +257,15 @@
     }
     .sticky_header .nav-item .nav-link, .sticky_header .dropdown-toggle, .sticky_header .navbar-brand {
         padding: 0;
+    }
+    .bg_imaage_shape {
+        height: 49px !important;
+    }
+    .heroimg{
+        width: 100% !important;
+    }
+    .ca_footer span{
+        color: #b7b4b4;
+        font-size: 14px;
     }
 }
