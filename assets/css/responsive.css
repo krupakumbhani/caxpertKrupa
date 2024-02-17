@@ -249,4 +249,7 @@
     .books_section .rupee {
         display: none;
     }
+    .sticky_header .nav-item .nav-link, .sticky_header .dropdown-toggle, .sticky_header .navbar-brand {
+        padding: 0;
+    }
 }
