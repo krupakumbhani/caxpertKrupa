@@ -41,12 +41,12 @@ body {
 
 .sticky_header {
     background: #eae8dd !important;
-    transition: all 3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .active_nav {
     background: #FFFFFF !important;
-    transition: all 2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu {
@@ -424,7 +424,7 @@ p {
     width: 40px;
     height: 40px;
     position: relative;
-    background: #FFF;
+    background: transparent;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -433,7 +433,7 @@ p {
     display: inline-block;
     position: absolute;
     width: 60%;
-    left: 10px;
+    left: 8px;
     height: 4px;
     border-radius: 2px;
     background: #000;
@@ -454,7 +454,7 @@ p {
 
 .openbtn.active span:nth-of-type(1) {
     top: 12px;
-    left: 14px;
+    left: 8px;
     transform: translateY(6px) rotate(-45deg);
     width: 60%;
 }
@@ -465,7 +465,7 @@ p {
 
 .openbtn.active span:nth-of-type(3) {
     top: 24px;
-    left: 14px;
+    left: 8px;
     transform: translateY(-6px) rotate(45deg);
     width: 60%;
 }

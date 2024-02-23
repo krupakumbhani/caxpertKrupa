@@ -85,7 +85,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-12">
                     <h1 class="mb-3">
-                        We will maintain your Books.<br class="d-lg-block d-none" />
+                        We will maintain your Books.<br class="d-lg-block" />
                         So that you can focus on your Business
                     </h1>
                     <p class="mb-3">
@@ -285,20 +285,22 @@
         </svg>
     </div>
     <section class="data_section py-60 mt-0">
-        <div class="caAcc_space">
-            <div class="row align-items-center mt-5">
-                <div class="col-lg-6 col-12 text-center text-lg-start">
-                    <h3 class="small-heading">Indian Accounting Services</h3>
-                    <p class="mb-0">
-                        We work with Indian businesses that vary in size but not in passion. Services undertaken
-                        include, data entry, tax filings, payroll processing, financial statement preparation and
-                        much more.
-                    </p>
-                    <button class="ca_button mt-4">Learn More</button>
-                </div>
-                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                    <div class="bg_coffe">
-                        <img src="assets/images/home/datae.svg" class="img-fluid" />
+        <div class="container">
+            <div class="caAcc_space">
+                <div class="row g-5 align-items-center mt-5">
+                    <div class="col-lg-6 col-12 text-center text-lg-start">
+                        <h3 class="small-heading">Indian Accounting Services</h3>
+                        <p class="mb-0 mt-3">
+                            We work with Indian businesses that vary in size but not in passion. Services undertaken
+                            include, data entry, tax filings, payroll processing, financial statement preparation and
+                            much more.
+                        </p>
+                        <button class="ca_button mt-4">Learn More</button>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0  px-4 px-md-0">
+                        <div class="bg_coffe">
+                            <img src="assets/images/home/datae.svg" class="img-fluid" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -308,8 +310,8 @@
     <section class="time_focus py-60">
         <div class="ca_container">
             <div class="row align-items-center">
-                <div class="col-lg-7 text-center order-2 order-lg-1 mt-5 mt-lg-0">
-                    <img src="assets/images/home/time-focus.png" class="img-fluid" alt="img" />
+                <div class="col-lg-7 text-center order-2 order-lg-1 mt-5 mt-lg-0  px-4 px-md-0">
+                    <img src="assets/images/home/time-focus.png" class="img-fluid  px-4 px-md-0" alt="img" />
                 </div>
                 <div class="col-lg-5 mt-5 mt-md-0 pt-4 text-center text-lg-start order-1 order-lg-2">
                     <h2 class="small-heading">
@@ -341,8 +343,9 @@
                     </p>
                     <button class="ca_button mt-4">Learn More</button>
                 </div>
-                <div class="col-lg-6 offset-lg-1 text-center">
-                    <img src="assets/images/home/tax-filing.svg" class="img-fluid" alt="img" />
+                <div class="col-lg-6 offset-lg-1 text-center  px-4 px-md-0">
+                    <img src="assets/images/home/tax-filing.svg" class="img-fluid  px-4 px-md-0 mt-3 mt-md-0"
+                        alt="img" />
                 </div>
             </div>
         </div>
@@ -427,7 +430,7 @@
         </div>
     </footer>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -486,11 +489,11 @@
         });
 
         $(".openbtn").click(function () {
-        $(this).toggleClass("active");
+            $(this).toggleClass("active");
         });
 
         $(window).resize(function () {
-        PositionCheck();
+            PositionCheck();
         });
     </script>
 </body>
