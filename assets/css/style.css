@@ -13,6 +13,9 @@
 body {
     font-family: 'Suwannaphum';
 }
+.navbar-nav{
+    margin-right: 10%;
+}
 
 .ca_container {
     max-width: 1172px;
@@ -449,7 +452,7 @@ p {
 }
 
 .openbtn span:nth-of-type(3) {
-    top: 23px;
+    top: 24px;
 }
 
 .openbtn.active span:nth-of-type(1) {
@@ -469,11 +472,6 @@ p {
     transform: translateY(-6px) rotate(45deg);
     width: 60%;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 .caAcc_space {
     margin: 0 50px;
 }
