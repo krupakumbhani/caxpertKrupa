@@ -469,11 +469,6 @@ p {
     transform: translateY(-6px) rotate(45deg);
     width: 60%;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 .caAcc_space {
     margin: 0 50px;
 }

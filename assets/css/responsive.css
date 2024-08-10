@@ -21,6 +21,12 @@
     }
 }
 
+@media screen and (min-width: 990px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
 @media screen and (max-width:1280px) {
     .books_section .acc_man {
         bottom: -74%;
@@ -60,6 +66,7 @@
 }
 
 @media screen and (max-width:991px) {
+
     .mobile_logo {
         display: block;
     }
