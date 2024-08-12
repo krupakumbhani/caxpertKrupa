@@ -1,0 +1,66 @@
+.divimageloc{
+    width: 30px;
+    height: 30px;
+}
+.address-p{
+    margin: 0 ;
+}
+.divaddre{
+    display: flex;
+    margin: 30px 10px;
+}
+.divaddre i{
+    position: relative;
+    display: block;
+    margin: 15px 25px 15px 0px;
+}
+.imgfb{
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 20px;
+}
+.fa-2xl {
+    font-size: 3em;
+    line-height: 1.03125em;
+    margin-bottom: 10px;
+}
+.imgnews{
+    width: 130px;
+}
+.elementor-field-textual.elementor-size-lg {
+    font-size: 18px;
+    min-height: 59px;
+    padding: 7px 20px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.div_nehaimage{
+    width: 25%;
+    padding: 20px;
+}
+.div-abouttext{
+    width: 75%;
+    padding: 20px;
+}
+.div-imgwedo{
+    height: 170px;
+    object-fit: contain;
+}
+.divteam{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+}
+@media only screen and (max-width:425px){
+    .div_nehaimage{
+        width: 100%;
+        padding: 10px;
+    }
+    .div-abouttext{
+        width: 100%;
+        padding: 10px;
+    }
+    .divteam{
+        display: block;
+    }
+}
