@@ -228,8 +228,8 @@ p {
   top: 50px;
   height: 70%;
 }
-.books_section .rupee img{
-    height: 100%;
+.books_section .rupee img {
+  height: 100%;
 }
 
 .books_section span,
@@ -369,7 +369,7 @@ p {
 }
 
 .tax_detail img {
-    display: none;
+  display: none;
   width: 40px;
   height: 40px;
 }
@@ -465,4 +465,41 @@ p {
   transform: translateY(-6px) rotate(45deg);
   width: 60%;
 }
-
+.contact-section h1 {
+  color: var(--blue);
+  font-family: "Suwannaphum";
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 1rem !important;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+.contact-section h3{
+  font-family: "Suwannaphum";
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 1rem !important;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 45px;
+}
+.contact-section p {
+  line-height: 1.5;
+  font-family: "Suwannaphum";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  font-weight: 400;
+  margin-bottom: 1rem !important;
+  color: var(--blue);
+  font-size: 16px;
+}

@@ -63,6 +63,10 @@
     .divteam{
         display: block;
     }
+    .divaddre{
+        display: flex;
+        margin: 10px 10px;
+    }
 }
 .div-cenete{
     position: absolute;
