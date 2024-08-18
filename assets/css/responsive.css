@@ -21,20 +21,14 @@
     }
 }
 
-@media screen and (min-width: 990px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-}
+
 
 @media screen and (max-width:1280px) {
     .books_section .acc_man {
         bottom: -74%;
     }
 
-    .books_section .rupee {
-        top: -130px;
-    }
+    
 
     .sticky_header .nav-item .nav-link,
     .sticky_header .dropdown-toggle,
@@ -45,7 +39,9 @@
 }
 
 @media screen and (max-width:1200px) {
-
+    .navbar_ul {
+        margin-right: 11%;
+    }
     .ca_container,
     .caAcc_space {
         margin-right: 18px;
@@ -53,17 +49,7 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    /* .books_section .acc_man {
-        bottom: -50%;
-        position: relative;
-        transform: translate(-50%, -50%);
-    } */
 
-    .books_section .rupee {
-        top: -20%;
-    }
-}
 
 @media screen and (max-width:991px) {
 
@@ -125,7 +111,11 @@
         padding: 0 15px;
     }
 }
-
+@media screen and (min-width: 990px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
 @media screen and (max-width:768px) {
     .hero-section {
         padding: 80px 0;
@@ -133,6 +123,14 @@
 
     .ca_container {
         max-width: 720px;
+      
+    }
+    .ca_flex_container{
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .hero-section h1 {
@@ -180,7 +178,7 @@
 
 
     .books_section .rupee {
-        top: 31px;
+        display: none;
     }
 
     .bg_imaage_shape {
@@ -195,6 +193,19 @@
     .books_section .acc_man {
         bottom: -65%;
         width: 62%;
+    }
+    .navbar_ul {
+        margin-right: 0%
+    }
+    .us_img{
+        width: 80%;
+    }
+    .mob_footer_container{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .hero-section p {
+        display: inline;
     }
 }
 
@@ -295,5 +306,16 @@
     .ca_footer span {
         color: #b7b4b4;
         font-size: 14px;
+    }
+    .mob_dropdown_menu li a.dropdown-item{
+        padding-left: 24% !important;
+    }
+}
+@media screen and (max-width:320px) {
+   
+    .small-heading,
+    .hero-section h1,
+    .books_section .small-heading{
+        font-size: 20px;
     }
 }

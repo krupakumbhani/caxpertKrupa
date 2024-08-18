@@ -20,12 +20,10 @@
 <body>
     <nav class="navbar navbar-expand-lg  sticky-top sticky_header">
         <div class="container-fluid">
-            <a class="navbar-brand me-0 mobile_logo" href="javascript:void(0);">
+            <a class="navbar-brand me-0 mobile_logo" href="/index.html">
                 <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
             </a>
-            <!-- <button class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
+           
             <div class="openbtn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -33,7 +31,7 @@
                 <span></span>
             </div>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center">
+                <ul class="navbar-nav align-items-center navbar_ul">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="javascript:void(0);">
                             About Us
@@ -44,12 +42,12 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Our Services
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <ul class="dropdown-menu mob_dropdown_menu" aria-labelledby="dropdown1">
                             <li>
-                                <a class="dropdown-item" href="javascript:void(0);">Indian Accounting</a>
+                                <a class="dropdown-item" href="/services.html">Indian Accounting</a>
                             </li>
                             <li>
-                                <a class="dropdown-item border-0" href="javascript:void(0);">US
+                                <a class="dropdown-item border-0" href="/international.html">US
                                     Accounting</a>
                             </li>
                         </ul>
@@ -58,7 +56,7 @@
                         <a class="nav-link" href="javascript:void(0);">WEP Partnership</a>
                     </li>
                     <li class="nav-item dextop_logo">
-                        <a class="navbar-brand me-0" href="javascript:void(0);">
+                        <a class="navbar-brand me-0" href="/index.html">
                             <img src="assets/images/header/logo.svg" alt="Logo" class="img-fluid" />
                         </a>
                     </li>
@@ -66,10 +64,10 @@
                         <a class="nav-link" href="javascript:void(0);">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);">Careers</a>
+                        <a class="nav-link" href="/careers.html">Careers</a>
                     </li>
                     <li class="nav-item border-0">
-                        <a class="nav-link" href="javascript:void(0);">Contact Us</a>
+                        <a class="nav-link" href="/Contactus.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -81,14 +79,14 @@
 
     <!-- start hero section  -->
     <section class="hero-section text-center">
-        <div class="ca_container">
+        <div class="ca_container ca_flex_container">
             <div class="row justify-content-center">
-                <div class="col-lg-7 col-12">
+                <div class="col-lg-9 col-12">
                     <h1 class="mb-3">
                         We will maintain your Books.<br class="d-lg-block" />
                         So that you can focus on your Business
                     </h1>
-                    <p class="mb-3">
+                    <p class="mb-lg-3">
                         Get professional accountants to undertake your data entry, reconcile your numbers and
                     </p>
                     <p>
@@ -100,7 +98,7 @@
                     </div> -->
                 </div>
             </div>
-            <img src="assets/images/home/hero.png" alt="img" class="img-fluid w-75 mt-5 ms-md-5 ms-0 heroimg" />
+            <img src="assets/images/home/hero.png" alt="img" class="img-fluid mt-5 ms-md-5 ms-0 heroimg" />
         </div>
     </section>
     <!-- end hero section  -->
@@ -245,10 +243,13 @@
 
     <!-- start theerd section  -->
     <section class="py-5 books_section text-center position-relative">
-        <div class="ca_container">
+        <div class="ca_container ca_flex_container">
+            <div class="rupee">
+                <img src="./assets/images/home/rupee.png" alt="">
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-12">
-                    <div class="rupee"></div>
+                   
                     <h3 class="small-heading">
                         Devoted Accountants, Perfect Books, Timely Filings
                     </h3>
@@ -259,7 +260,8 @@
                         vision is to support your vision.
 
                     </p>
-                    <button class="ca_button mt-4">About Us</button>
+                    <button class="ca_button mt-4" >About Us</button>
+                   
                 </div>
                 <div class="col-12">
                     <img src="assets/images/home/accounting-man2.png" alt="img" class="acc_man" />
@@ -285,9 +287,9 @@
         </svg>
     </div>
     <section class="data_section py-60 mt-0">
-        <div class="container">
-            <div class="caAcc_space">
-                <div class="row g-5 align-items-center mt-5">
+        <div class="ca_container ca_flex_container">
+           
+                <div class="row align-items-center mt-sm-5 w-100">
                     <div class="col-lg-6 col-12 text-center text-lg-start">
                         <h3 class="small-heading">Indian Accounting Services</h3>
                         <p class="mb-0 mt-3">
@@ -295,7 +297,7 @@
                             include, data entry, tax filings, payroll processing, financial statement preparation and
                             much more.
                         </p>
-                        <button class="ca_button mt-4">Learn More</button>
+                        <button class="ca_button mt-4" onclick="window.location.href='/services.html';">Learn More</button>
                     </div>
                     <div class="col-lg-6 col-12 mt-5 mt-lg-0  px-4 px-md-0">
                         <div class="bg_coffe">
@@ -303,17 +305,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </section>
 
     <section class="time_focus py-60">
-        <div class="ca_container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 text-center order-2 order-lg-1 mt-5 mt-lg-0  px-4 px-md-0">
-                    <img src="assets/images/home/datae.svg" class="img-fluid" />
+        <div class="ca_container ca_flex_container">
+            <div class="row align-items-center w-100">
+                <div class="col-lg-6 text-center order-2 order-lg-1 mt-5 mt-lg-0  px-4 px-md-0">
+                    <img src="assets/images/home/datae.svg" class="us_img" />
                 </div>
-                <div class="col-lg-5 mt-5 mt-md-0 pt-4 text-center text-lg-start order-1 order-lg-2">
+                <div class="col-lg-6 mt-sm-5 mt-md-0 pt-4 text-center text-lg-start order-1 order-lg-2">
                     <h2 class="small-heading">
                         US Accounting Services
                     </h2>
@@ -323,16 +325,16 @@
                         preparation, customized excel model preparation, payables, receivables and much more.
 
                     </p>
-                    <button class="ca_button mt-4">Learn More</button>
+                    <button class="ca_button mt-4" onclick="window.location.href='/international.html';">Learn More</button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="tax_section py-60">
-        <div class="ca_container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mt-5 pt-4 text-center text-lg-start">
+        <div class="ca_container ca_flex_container">
+            <div class="row align-items-center ">
+                <div class="col-lg-6 mt-sm-5 pt-4 text-center text-lg-start">
                     <h2 class="small-heading">
                         Women’s Entrepreneurship Platform
                     </h2>
@@ -341,9 +343,9 @@
                         we are hoping to help thousands of women accomplish their business goals, one
                         webinar or phone session at a time.
                     </p>
-                    <button class="ca_button mt-4">Learn More</button>
+                    <button class="ca_button mt-4" >Learn More</button>
                 </div>
-                <div class="col-lg-6 offset-lg-1 text-center  px-4 px-md-0">
+                <div class="col-lg-6  text-center  px-4 px-md-0">
                     <img src="assets/images/home/tax-filing.svg" class="img-fluid  px-4 px-md-0 mt-3 mt-md-0"
                         alt="img" />
                 </div>
@@ -351,7 +353,7 @@
         </div>
     </section>
     <footer class="ca_footer">
-        <div class="ca_container">
+        <div class="ca_container mob_footer_container ca_flex_container">
             <div class="row pb-4 pt-4">
                 <div class="col-lg-2 col-12 mb-5 mb-lg-0">
                     <img src="assets/images/header/footer-logo.svg" alt="img" class="img-fluid pointer" />
@@ -363,10 +365,10 @@
                             <a href="">About Us</a>
                         </li>
                         <li>
-                            <a href="">Careers</a>
+                            <a href="/careers.html">Careers</a>
                         </li>
                         <li>
-                            <a href="">Contact Us</a>
+                            <a href="/Contactus.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -374,10 +376,10 @@
                     <h5 class="mb-3">SERVICES</h5>
                     <ul>
                         <li>
-                            <a href="">Indian Accounting Services</a>
+                            <a href="/services.html">Indian Accounting Services</a>
                         </li>
                         <li>
-                            <a href="">US Accounting Services</a>
+                            <a href="/international.html">US Accounting Services</a>
                         </li>
                     </ul>
                 </div>
@@ -403,7 +405,7 @@
                 </div>
             </div>
             <hr />
-            <div class="d-flex justify-content-between align-items-start align-items-center copyright mt-lg-4 mt-0">
+            <div class="d-flex justify-content-between align-items-center copyright mt-lg-4 mt-0">
                 <!-- <span class="d-block d-md-none">© Espresso Technologies Private Limited </span> -->
                 <div class="d-flex gap-3">
                     <span class="d-none d-md-block">© Espresso Technologies Private Limited </span>
@@ -414,7 +416,7 @@
                         <a href="">Privacy Policy</a>
                     </span>
                 </div>
-                <div class="d-flex gap-4">
+                <div class="d-flex gap-4 align-items-center">
                     <a href="">
                         <img src="assets/images/social/whatsapp.svg" alt="Whatsapp" class="img-fluid" />
                     </a>
@@ -446,12 +448,12 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 8,
-            spaceBetween: 30,
+            slidesPerView: 10,
+            spaceBetween: 10,
             loop: true,
             pagination: false,
             autoplay: {
-                delay: 2500,
+                delay: 500,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -460,22 +462,22 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                },
-                375: {
                     slidesPerView: 2,
                 },
+                375: {
+                    slidesPerView: 3,
+                },
                 425: {
-                    slidesPerView: 2.8,
+                    slidesPerView: 3.5,
                 },
                 768: {
-                    slidesPerView: 4.8,
+                    slidesPerView: 6,
                 },
                 1024: {
-                    slidesPerView: 5,
-                },
-                1440: {
                     slidesPerView: 8,
+                },
+                1240: {
+                    slidesPerView: 10,
                 }
             },
         })
