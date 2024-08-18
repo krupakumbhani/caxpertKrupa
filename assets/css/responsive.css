@@ -265,6 +265,7 @@
     }
 
     .tax_detail img {
+        display: none;
         width: 35px;
         height: 40px;
     }
