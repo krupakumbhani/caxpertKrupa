@@ -38,8 +38,11 @@
     width: 25%;
     padding: 20px;
 }
+.div-abouttext p {
+    text-align: justify;
+}
 .div-abouttext{
-    width: 75%;
+    width: 90%;
     padding: 20px;
 }
 .div-imgwedo{
@@ -131,4 +134,7 @@ select {
     color: white;
     font-size: 13px;
     margin: 0;
+}
+.border-color {
+    border-color: #212121 !important;
 }

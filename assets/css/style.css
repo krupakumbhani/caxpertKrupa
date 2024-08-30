@@ -45,7 +45,7 @@ body {
 }
 
 .active_nav {
-  background: #ffffff !important;
+  background: white !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -73,14 +73,20 @@ body {
 .mobile_logo {
   display: none;
 }
-.navbar_ul {
-  margin-right: 6%;
+.navbar {
+  transition: background-color 0.3s; 
+}
+
+
+.navbar.scrolled {
+  background-color: white !important; 
+  
 }
 
 .hero-section {
   background-color: var(--hero);
   display: block;
-  padding: 160px 0 50px;
+  padding: 100px 0px;
 }
 
 .hero-section h1 {
@@ -108,11 +114,13 @@ body {
   font-weight: 500;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 .us_img {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
+
 .small-heading {
   color: var(--blue);
   font-size: 30px;
@@ -224,10 +232,12 @@ p {
 .books_section .rupee {
   display: block;
   position: absolute;
-  left: 10px;
-  top: 50px;
-  height: 70%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  opacity: 80%;
 }
+
 .books_section .rupee img {
   height: 100%;
 }
@@ -270,6 +280,37 @@ p {
 }
 
 /* slider  */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 2s linear infinite;
+}
+
+.marquee-content img {
+  margin: 0 30px;
+  height: 40px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
 
 .bg_imaage_shape {
   -webkit-transform: rotate(180deg);
@@ -296,46 +337,6 @@ p {
   transform: translateX(-50%);
 }
 
-/* Slider */
-.swiper-button-next,
-.swiper-button-prev {
-  display: none;
-}
-
-.ca_container .swiper-slide {
-  overflow: hidden !important;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
-.swiper-wrapper {
-  height: 72px !important;
-}
-
-.swiper-slide div {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.swiper-slide div img {
-  width: 100%;
-  height: 100%;
-  max-width: 94px;
-  margin: 0 auto;
-  max-height: 37px;
-}
-
-.swiper-wrapper {
-  height: 200px;
-}
-
-.swiper-slide img {
-  width: 100px;
-  height: 200px;
-}
 
 .services_work_detail img {
   width: 70px;
@@ -363,7 +364,7 @@ p {
 }
 
 .acc_services {
-  background-color: #eeede8;
+  background-color: fffaee;
   width: 100%;
   display: block;
 }
@@ -470,6 +471,9 @@ p {
   transform: translateY(-6px) rotate(45deg);
   width: 60%;
 }
+.contact-section{
+  background-color:#fffcf4;
+}
 .contact-section h1 {
   color: var(--blue);
   font-family: "Suwannaphum";
@@ -483,7 +487,8 @@ p {
   font-size: 30px;
   line-height: 45px;
 }
-.contact-section h3{
+
+.contact-section h3 {
   font-family: "Suwannaphum";
   text-align: center !important;
   margin: 0;
@@ -496,6 +501,7 @@ p {
   font-size: 25px;
   line-height: 45px;
 }
+
 .contact-section p {
   line-height: 1.5;
   font-family: "Suwannaphum";
@@ -507,4 +513,66 @@ p {
   margin-bottom: 1rem !important;
   color: var(--blue);
   font-size: 16px;
+}
+
+.custom_card {
+  background-color: #eeede8;
+  padding: 15px;
+  border-radius: 10px;
+  height: 100%;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  display: none;
+}
+.iti {
+  display: block;
+}
+.custom-dropdown {
+  position: relative;
+  display: block;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.custom-dropdown-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+}
+
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.arrow {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px; /* Adjust as needed */
+  color: #000; /* Adjust color as needed */
 }

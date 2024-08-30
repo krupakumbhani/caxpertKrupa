@@ -28,7 +28,7 @@
         bottom: -74%;
     }
 
-    
+
 
     .sticky_header .nav-item .nav-link,
     .sticky_header .dropdown-toggle,
@@ -42,6 +42,7 @@
     .navbar_ul {
         margin-right: 11%;
     }
+
     .ca_container,
     .caAcc_space {
         margin-right: 18px;
@@ -52,6 +53,18 @@
 
 
 @media screen and (max-width:991px) {
+    .box_shadow_menu {
+        box-shadow: 0px 7px 9px 1px #0000000d;
+    }
+
+    a.dropdown-item {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    a.dropdown-item.pb_last {
+        padding-bottom: 0 !important;
+    }
 
     .mobile_logo {
         display: block;
@@ -66,7 +79,7 @@
     }
 
     .sticky_header .navbar-nav .nav-item {
-        border-bottom: 1px solid var(--blue);
+        /* border-bottom: 1px solid var(--blue); */
         width: 100%;
         padding: 10px 0px;
     }
@@ -89,12 +102,12 @@
 
     .dropdown-menu .dropdown-item {
         color: #000000;
-        border-bottom: 1px solid #000;
+        /* border-bottom: 1px solid #000; */
         padding: 10px 5px 15px !important;
     }
 
     .sticky_header .navbar-nav .nav-item {
-        border-bottom: 1px solid #000;
+        /* border-bottom: 1px solid #000; */
     }
 
     .navbar {
@@ -111,11 +124,13 @@
         padding: 0 15px;
     }
 }
+
 @media screen and (min-width: 990px) {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
 }
+
 @media screen and (max-width:768px) {
     .hero-section {
         padding: 80px 0;
@@ -123,9 +138,10 @@
 
     .ca_container {
         max-width: 720px;
-      
+
     }
-    .ca_flex_container{
+
+    .ca_flex_container {
         margin: auto;
         align-items: center;
         display: flex;
@@ -194,26 +210,31 @@
         bottom: -65%;
         width: 62%;
     }
+
     .navbar_ul {
         margin-right: 0%
     }
-    .us_img{
+
+    .us_img {
         width: 80%;
     }
-    .mob_footer_container{
+
+    .mob_footer_container {
         flex-direction: column;
         align-items: normal;
     }
+
     .hero-section p {
         display: inline;
     }
-    .divaddre p{
+
+    .divaddre p {
         text-align: left;
     }
 }
 
 @media screen and (max-width:600px) {
-
+  
     .bg_imaage_shape,
     .bg_imaage_shape2 {
         display: none;
@@ -311,15 +332,24 @@
         color: #b7b4b4;
         font-size: 14px;
     }
-    .mob_dropdown_menu li a.dropdown-item{
+
+    .mob_dropdown_menu li a.dropdown-item {
         padding-left: 24% !important;
     }
+    .div-cenete{
+        position: relative !important;
+        transform: unset !important;
+        top: unset !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
+
 @media screen and (max-width:320px) {
-   
+
     .small-heading,
     .hero-section h1,
-    .books_section .small-heading{
+    .books_section .small-heading {
         font-size: 20px;
     }
 }
