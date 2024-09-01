@@ -232,8 +232,8 @@ p {
 .books_section .rupee {
   display: block;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 10px;
+  top: 10px;
   height: 100%;
   opacity: 80%;
 }
@@ -454,23 +454,23 @@ p {
   top: 23px;
 }
 
-.openbtn.active span:nth-of-type(1) {
+/* .openbtn:not(.collapsed) span:nth-of-type(1) {
   top: 12px;
   left: 8px;
   transform: translateY(6px) rotate(-45deg);
   width: 60%;
 }
 
-.openbtn.active span:nth-of-type(2) {
+.openbtn:not(.collapsed) span:nth-of-type(2) {
   opacity: 0;
 }
 
-.openbtn.active span:nth-of-type(3) {
+.openbtn:not(.collapsed) span:nth-of-type(3) {
   top: 24px;
   left: 8px;
   transform: translateY(-6px) rotate(45deg);
   width: 60%;
-}
+} */
 .contact-section{
   background-color:#fffcf4;
 }
