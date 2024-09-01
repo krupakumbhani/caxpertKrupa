@@ -36,7 +36,7 @@ async function scanFile(file) {
             body: formData,
             
         };
-
+        
         const response = await fetch('https://www.virustotal.com/api/v3/files', options);
         if (!response.ok) {
             throw new Error(`Error uploading file: ${response.statusText}`);
