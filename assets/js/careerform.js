@@ -34,7 +34,7 @@ async function scanFile(file) {
                 'x-apikey': apiKey
             },
             body: formData,
-            mode: 'no-cors'
+            
         };
 
         const response = await fetch('https://www.virustotal.com/api/v3/files', options);
