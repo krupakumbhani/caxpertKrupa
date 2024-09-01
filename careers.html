@@ -187,21 +187,22 @@
                           
                         </div>
                         <div class="my-3">
-                            <input class="elementor-field-textual elementor-size-lg w-100" placeholder="Name"> 
+                            <input class="elementor-field-textual elementor-size-lg w-100" placeholder="Name" name="name"> 
                         </div>
                         <div class="my-3">
                             <input class="elementor-field-textual elementor-size-lg w-100" placeholder="Email"
-                                type="email" required>
+                                type="email" name="email" required>
                         </div>
                         <div class="my-3">
-                            <textarea class="elementor-field-textual elementor-size-lg w-100" rows="4"
+                            <textarea class="elementor-field-textual elementor-size-lg w-100" rows="4" name="message"
                                 placeholder="Tell us anything you would like us to know"></textarea>
                         </div>
                         <div class="my-3">
-                            <input type="file" name="form_fields[attachment]" id="form-field-attachment" class="elementor-field elementor-size-lg entor-upload-field" required accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                            <input type="file" name="attachment" id="form-field-attachment" class="elementor-field elementor-size-lg entor-upload-field" required accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
                         </div>
                         <!-- Google reCAPTCHA widget -->
                         <div class="g-recaptcha" data-sitekey="6Lfa_jMqAAAAAMwhSKQybaKa_LPNBzciFxWZz6W2"></div>
+                        <span class="error-message" id="captchaError"></span>
                         <input type="hidden" name="_next" value="https://krupakumbhani.github.io/caxpertKrupa/career.html" />
                         <button type="submit" class="ca_button mt-4">Apply</button>
                         </div>
@@ -331,46 +332,7 @@
 });
 
     </script>
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    const fileInput = document.getElementById('form-field-attachment');
-
-    fileInput.addEventListener('change', function () {
-        const file = fileInput.files[0];
-        if (file) {
-            // Check file type
-            const validTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'image/jpeg', 'image/png'];
-            if (!validTypes.includes(file.type)) {
-                alert('Invalid file type. Please upload a PDF, DOC, DOCX, JPG, JPEG, or PNG file.');
-                fileInput.value = ''; // Clear the input
-                return;
-            }
-
-            // Check file size (max size in MB)
-            const maxSize = fileInput.getAttribute('data-maxsize') * 1024 * 1024; // Convert MB to bytes
-            if (file.size > maxSize) {
-                alert(fileInput.getAttribute('data-maxsize-message'));
-                fileInput.value = ''; // Clear the input
-                return;
-            }
-        }
-    });
-});
-
-    </script> -->
-    <script>
-        document.getElementById('taxForm').addEventListener('submit', function(event) {
-            // Get the reCAPTCHA response
-            var recaptchaResponse = grecaptcha.getResponse();
-            
-            // Check if reCAPTCHA is completed
-            if (recaptchaResponse.length === 0) {
-                // Prevent form submission
-                event.preventDefault();
-                alert('Please complete the reCAPTCHA to proceed.');
-            }
-        });
-    </script>
+   
 <script src="./assets/js/careerform.js"></script>
   
 
