@@ -125,7 +125,7 @@ async function submitForm(form) {
     });
 
     if (response.ok) {
-      window.location.href = form.querySelector('input[name="_next"]').value;
+      window.location.href = "https://krupakumbhani.github.io/caxpertKrupa/careers.html";
     } else {
       throw new Error("Form submission failed");
     }
