@@ -95,30 +95,31 @@
       <div class="row justify-content-center">
        
         <div class="col-lg-6 col-12 p-4">
-          <form class="text-lg-start" id="contactForm" action="https://formsubmit.io/send/info@caxpert.com" method="POST">
+          <form class="text-lg-start" id="contactForm" action="https://formsubmit.co/krupa.freelancing@gmail.com" method="POST">
             <input type="hidden" name="form_type" value="contact_form">  
             <div class="my-3">
-                  <input id="name" class="elementor-field-textual elementor-size-lg w-100" placeholder="Name" required />
+                  <input name="name" id="name" class="elementor-field-textual elementor-size-lg w-100" placeholder="Name"  />
                   <span id="nameError" class="error-message"></span>
               </div>
               <div class="my-3">
-                  <input id="email" class="elementor-field-textual elementor-size-lg w-100" placeholder="Email" type="email" required />
+                  <input id="email" name="email" class="elementor-field-textual elementor-size-lg w-100" placeholder="Email" type="email"  />
                   <span id="emailError" class="error-message"></span>
               </div>
               <div class="my-3">
-                  <input id="mobile" class="elementor-field-textual elementor-size-lg w-100" placeholder="Mobile number" type="tel" required />
-                  <small class="error-message" id="mobileError"></small>
+                  <input id="mobile"name="mobile"  class="elementor-field-textual elementor-size-lg w-100" placeholder="Mobile number" type="tel"  />
+                  <span class="error-message" id="mobileError"></span>
               </div>
               <div class="my-3">
-                  <input id="companyName" class="elementor-field-textual elementor-size-lg w-100" placeholder="Company Name" />
+                  <input id="companyName" name="company_name" class="elementor-field-textual elementor-size-lg w-100" placeholder="Company Name" />
               </div>
               <div class="my-3">
-                  <textarea id="message" class="elementor-field-textual elementor-size-lg w-100" rows="4" placeholder="Message (optional)"></textarea>
+                  <textarea id="message" name="message" class="elementor-field-textual elementor-size-lg w-100" rows="4" placeholder="Message (optional)"></textarea>
               </div>
               <!-- Google reCAPTCHA widget -->
               <div class="g-recaptcha" data-sitekey="6Lfa_jMqAAAAAMwhSKQybaKa_LPNBzciFxWZz6W2"></div>
-              <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
-              <button type="submit" class="ca_button">Submit</button>
+              <span class="error-message" id="captchaError"></span>
+              <input type="hidden" name="_next" value="https://krupakumbhani.github.io/caxpertKrupa/contact.html" />
+              <button type="submit" class="ca_button mt-3">Submit</button>
           </form>
       </div>
       
@@ -236,7 +237,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/nav.js"></script>
   <script src="./assets/js/contactform.js"></script>
-  <script>
+  <!-- <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         // Get the reCAPTCHA response
         var recaptchaResponse = grecaptcha.getResponse();
@@ -248,7 +249,7 @@
             alert('Please complete the reCAPTCHA to proceed.');
         }
     });
-</script>
+</script> -->
 </body>
 
 </html>
