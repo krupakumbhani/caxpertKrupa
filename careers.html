@@ -201,7 +201,8 @@
                                 placeholder="Tell us anything you would like us to know"></textarea>
                         </div>
                         <div class="my-3">
-                            <input type="file" name="form_fields[attachment]" id="form-field-attachment" class="elementor-field elementor-size-lg entor-upload-field" required="required" aria-required="true" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-maxsize="5" data-maxsize-message="This file exceeds the maximum file size of 5MB.">
+                            <input type="file" name="form_fields[attachment]" id="form-field-attachment" class="elementor-field elementor-size-lg entor-upload-field" required accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                        </div>
                         </div>
                         <div class="g-recaptcha" data-sitekey="6LcnszMqAAAAAO_sqWYXAlYkOfTcEgvfl7RdweK-"></div>
 
@@ -334,7 +335,7 @@
 });
 
     </script>
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
     const fileInput = document.getElementById('form-field-attachment');
 
@@ -360,7 +361,7 @@
     });
 });
 
-    </script>
+    </script> -->
    <script>
     document.getElementById('taxForm').addEventListener('submit', function(event) {
         var recaptcha = document.querySelector('.g-recaptcha-response').value;
@@ -370,7 +371,7 @@
         }
     });
 </script>
-
+<script src="./assets/js/careerform.js"></script>
   
 
 </body>
