@@ -295,7 +295,7 @@ p {
 
 .marquee-content {
   display: flex;
-  animation: scroll 2s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .marquee-content img {
