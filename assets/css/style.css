@@ -74,19 +74,17 @@ body {
   display: none;
 }
 .navbar {
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 }
 
-
 .navbar.scrolled {
-  background-color: white !important; 
-  
+  background-color: white !important;
 }
 
 .hero-section {
   background-color: var(--hero);
   display: block;
-  padding: 100px 0px;
+  padding: 60px 0px;
 }
 
 .hero-section h1 {
@@ -116,7 +114,7 @@ body {
 }
 
 .us_img {
-  width: 100%;
+  width: 85%;
   height: auto;
   margin: 0 auto;
 }
@@ -135,7 +133,7 @@ p {
 }
 
 .py-60 {
-  padding: 60px 0;
+  padding: 45px 0;
 }
 
 .tax_section {
@@ -232,10 +230,11 @@ p {
 .books_section .rupee {
   display: block;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 50px;
+  top: 20%;
   height: 100%;
   opacity: 80%;
+  z-index: 10;
 }
 
 .books_section .rupee img {
@@ -305,10 +304,10 @@ p {
 
 @keyframes scroll {
   0% {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -336,7 +335,6 @@ p {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-
 
 .services_work_detail img {
   width: 70px;
@@ -471,8 +469,8 @@ p {
   transform: translateY(-6px) rotate(45deg);
   width: 60%;
 } */
-.contact-section{
-  background-color:#fffcf4;
+.contact-section {
+  background-color: #fffcf4;
 }
 .contact-section h1 {
   color: var(--blue);
@@ -575,4 +573,23 @@ p {
   transform: translateY(-50%);
   font-size: 14px; /* Adjust as needed */
   color: #000; /* Adjust color as needed */
+}
+.text-lg-justify {
+  text-align: justify;
+}
+
+.whatWedoImgs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.whatWedoImgs > img{
+  width: 210px;
+}
+.helpSecBG{
+  background-color: #eae8dd;
+}
+.w-60{
+  width: 60%;
 }
