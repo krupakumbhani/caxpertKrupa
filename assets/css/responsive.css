@@ -127,7 +127,7 @@
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .ca_container {
@@ -141,7 +141,9 @@
     justify-content: center;
     flex-direction: column;
   }
-
+  .hero-div{
+    justify-content: flex-start !important;
+  }
   .hero-section h1 {
     font-size: 28px;
   }
@@ -327,9 +329,12 @@
     height: auto;
   }
 
-  .heroimg {
-    width: 100% !important;
-  }
+ .heroimg{
+  height: auto;
+  max-height: 500px;
+  width: auto;
+  margin-left: 0;
+ }
 
   .ca_footer span {
     color: #b7b4b4;

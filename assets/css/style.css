@@ -85,6 +85,7 @@ body {
   background-color: var(--hero);
   display: block;
   padding: 60px 0px;
+  max-height: calc(100vh - 85px);
 }
 
 .hero-section h1 {
@@ -97,6 +98,23 @@ body {
 .hero-section p {
   color: var(--blue);
   font-size: 16px;
+}
+.hero-div {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+}
+.hero-top-div {
+  height: 30%;
+  flex-basis: 30%;
+}
+.heroimg {
+  height: 60%;
+  flex-basis: 60%;
+  width: fit-content;
+  margin-left: 50px;
+  display: flex;
+  align-self: center;
 }
 
 .ca_button {
@@ -584,12 +602,12 @@ p {
   margin-top: 45px;
 }
 
-.whatWedoImgs > img{
+.whatWedoImgs > img {
   width: 210px;
 }
-.helpSecBG{
+.helpSecBG {
   background-color: #eae8dd;
 }
-.w-60{
+.w-60 {
   width: 60%;
 }
