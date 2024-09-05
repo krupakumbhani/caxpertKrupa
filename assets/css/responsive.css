@@ -239,6 +239,16 @@
   .text-lg-justify{
     text-align: center;
   }
+  .whatWedoImgs_2{
+    display: none;
+  }
+  .div-cenete {
+    position: relative !important;
+    transform: unset !important;
+    top: unset !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -344,15 +354,18 @@
   .mob_dropdown_menu li a.dropdown-item {
     padding-left: 24% !important;
   }
-  .div-cenete {
-    position: relative !important;
-    transform: unset !important;
-    top: unset !important;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  
   .whatWedoImgs {
     justify-content: center;
+  }
+  .whatWedoImgs_1_2{
+    display: none;
+  }
+  .tax_detail{
+    order: 1;
+  }
+  .tax_detail_img{
+    order: 2;
   }
 }
 
