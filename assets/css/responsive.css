@@ -249,6 +249,10 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .tax_detail_img{
+    order: 2;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -277,6 +281,9 @@
 
   .hero-section {
     padding: 40px 0;
+  }
+  .hero-div {
+    height: auto;
   }
 
   .hero-section h1 {
@@ -361,12 +368,7 @@
   .whatWedoImgs_1_2{
     display: none;
   }
-  .tax_detail{
-    order: 1;
-  }
-  .tax_detail_img{
-    order: 2;
-  }
+ 
 }
 
 @media screen and (max-width: 320px) {
