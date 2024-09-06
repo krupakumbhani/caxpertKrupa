@@ -351,6 +351,7 @@
   max-height: 500px;
   width: auto;
   margin-left: 0;
+  flex-basis: auto;
  }
 
   .ca_footer span {
