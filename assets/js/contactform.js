@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("contactForm")
     .addEventListener("submit", function (e) {
-        debugger;
+       
         console.log("Form submit event triggered");
       e.preventDefault();
       let isValid = true;
@@ -81,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isValid) {
         console.log("Form is valid, submitting...");
         this.submit();
+        window.location.href = "https://caxpert.com/contact.html"
+
       }else{
         console.log("Form is invalid, not submitting.");
       }
